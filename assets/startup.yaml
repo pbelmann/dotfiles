@@ -1,0 +1,8 @@
+session_name: Startup
+windows:
+   - window_name: Projects
+     layout: main-vertical
+     panes:
+       - cd ~/projects
+       - cd ~/projects/dotfiles
+       - ssh pbelmann@cami-cebitec.dhcp.uni-bielefeld.de

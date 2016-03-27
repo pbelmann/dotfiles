@@ -32,6 +32,10 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-# copy personal template
+# copy personal vim template
 mkdir -p ~/.vim/templates
 cp assets/personal.templates ~/.vim/templates/personal.templates
+
+# copy tmuxp config
+mkdir -p ~/.tmuxp
+cp assets/startup.yaml ~/.tmuxp
