@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="vimrc"    # list of files/folders to symlink in homedir
+files="vimrc tmux.conf"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -35,5 +35,3 @@ done
 # copy personal template
 mkdir -p ~/.vim/templates
 cp assets/personal.templates ~/.vim/templates/personal.templates
-#
-
