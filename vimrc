@@ -3,6 +3,11 @@ set number
 " vim airline
 set laststatus=2
 
+" for vim markdown preview 
+let vim_markdown_preview_github=1
+"let vim_markdown_preview_toggle=1
+let vim_markdown_preview_toggle=2
+
 " vim plug (https://github.com/junegunn/vim-plug)
 call plug#begin()
 
@@ -20,5 +25,11 @@ Plug 'bling/vim-airline'
 
 " bash/c/awk/perl/vim/latex support
 Plug 'wolfgangmehner/vim-plugins'
+
+" markdown preview
+Plug 'JamshedVesuna/vim-markdown-preview'
+
+" install taskwarrior
+Plug 'blindFS/vim-taskwarrior'
 
 call plug#end()
