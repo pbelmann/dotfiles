@@ -1,12 +1,12 @@
 #!/bin/bash
 ############################
-# .make.sh
+# install.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
 ############################
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 olddir=~/dotfiles_old             # old dotfiles backup directory
 files="zshrc vimrc tmux.conf aliases functions"    # list of files/folders to symlink in homedir
 
@@ -39,3 +39,5 @@ cp assets/personal.templates ~/.vim/templates/personal.templates
 # copy tmuxp config
 mkdir -p ~/.tmuxp
 cp assets/startup.yaml ~/.tmuxp
+
+exec /bin/zsh
