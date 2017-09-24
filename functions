@@ -1,0 +1,31 @@
+# http://www.tutorialspoint.com/articles/find-the-largest-top-10-files-and-directories-on-a-linux
+# Use the following command to find the largest Top 10 files and directories on a Linux system
+function sort10(){
+    du -hsx * | sort -rh | head -10	
+}
+
+# set work context and list tasks
+function taskw(){
+    task context work && task ${@:1}
+}
+
+# set home context and list tasks
+function taskh(){
+    task context home && task ${@:1}
+}
+
+# set dev context and list tasks
+function taskd(){
+    task context dev && task ${@:1}
+}
+
+# set finance context and list tasks
+function taskf(){
+    task context finance && task ${@:1}
+}
+
+# remove blank lines and lines with only whitespaces from a file
+# http://www.ugu.com/sui/ugu/show?I=tip.today&F=1111111111&G=Y
+function remove_blank(){
+    sed -e '/^[ ]*$/d' $1
+}

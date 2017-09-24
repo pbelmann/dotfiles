@@ -1,5 +1,7 @@
 set number
 
+set pastetoggle=<F3>
+
 " vim airline
 set laststatus=2
 
